@@ -1,0 +1,15 @@
+{
+  "name": "discord-bot-node",
+  "version": "1.0.0",
+  "description": "A Discord bot in node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord": "^0.8.2"
+  }
+}
