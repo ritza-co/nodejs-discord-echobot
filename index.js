@@ -1,10 +1,12 @@
 const { Client } = require('discord'); //import client from discord
 
-Client.on('ready', () => {
+const client = new Client();
+
+client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-Client.on('message', msg => {
+client.on('message', msg => {
     if (msg.content === 'ping') {
       msg.reply('Pong!');
     }
@@ -13,4 +15,4 @@ Client.on('message', msg => {
     }
 });
 
-Client.login(process.env.TOKEN); //login bot using token
+client.login(process.env.TOKEN); //login bot using token
