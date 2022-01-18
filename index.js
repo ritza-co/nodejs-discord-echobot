@@ -7,7 +7,11 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-    if (msg.content === 'ping') {
+    // check if message isn't from us
+    if (msg.author == client.user) {
+      return;
+    }
+    else if (msg.content === 'ping') {
       msg.reply('Pong!');
     }
     else {
